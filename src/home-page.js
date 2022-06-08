@@ -1,4 +1,4 @@
-function homePage() {
+function HomePage() {
   const contentDiv = document.querySelector('#content');
   const heading = document.createElement('h1');
   heading.textContent = 'Welcome to the finest Italian Restaurant in town!';
@@ -12,4 +12,4 @@ function homePage() {
   contentDiv.appendChild(topImage);
 }
 
-export default homePage;
+export { HomePage };

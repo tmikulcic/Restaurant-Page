@@ -1,4 +1,4 @@
-import homePage from './home-page.js';
+import { HomePage } from './home-page.js';
 
 console.log('It is working!!');
-homePage();
+HomePage();
