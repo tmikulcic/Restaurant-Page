@@ -18,9 +18,15 @@ function HomePage() {
 
   const topImage = document.createElement('img');
   topImage.classList.add('top-image');
-  topImage.src = './photos/italian-restaurant.jpg';
+  topImage.src = '../src/photos/italian-restaurant.jpg';
   topImage.alt = 'Image of a restaurant';
   contentDiv.appendChild(topImage);
+
+  const para1 = document.createElement('p');
+  para1.classList.add('para1');
+  para1.textContent =
+    'We offer finest Italian food such as pizza, pasta and other for a very affordable price! Come with your family and enjoy the full Italian cuisine experience';
+  contentDiv.appendChild(para1);
 }
 
 
@@ -89,9 +95,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
+// import { Menu } from './menu.js';
+// import { About } from './about.js';
+// import { Contact } from './contact.js';
 
 console.log('It is working!!');
-(0,_home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage)();
+// HomePage();
 
 })();
 
