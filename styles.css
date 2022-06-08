@@ -1,5 +1,6 @@
 body {
   background-image: url(./src/photos/italian-restaurant.jpg);
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -35,4 +36,11 @@ h2 {
   font-size: 3rem;
   padding: 1.5rem;
   text-decoration: underline;
+}
+
+#content {
+  height: 83.7vh;
+  width: 50%;
+  background-color: rgb(0, 0, 0);
+  margin: auto;
 }
