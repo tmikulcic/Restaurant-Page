@@ -4,4 +4,4 @@ import { HomePage } from './home-page.js';
 // import { Contact } from './contact.js';
 
 console.log('It is working!!');
-// HomePage();
+HomePage();

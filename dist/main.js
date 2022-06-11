@@ -12,21 +12,27 @@ __webpack_require__.r(__webpack_exports__);
 function HomePage() {
   const contentDiv = document.querySelector('#content');
   const heading = document.createElement('h1');
-  heading.textContent = 'Welcome to the finest Italian Restaurant in town!';
+  heading.textContent = `Welcome to Papa Tony's, the finest Italian Restaurant in town!`;
   heading.classList.add('landing-title');
   contentDiv.appendChild(heading);
-
-  const topImage = document.createElement('img');
-  topImage.classList.add('top-image');
-  topImage.src = '../src/photos/italian-restaurant.jpg';
-  topImage.alt = 'Image of a restaurant';
-  contentDiv.appendChild(topImage);
 
   const para1 = document.createElement('p');
   para1.classList.add('para1');
   para1.textContent =
-    'We offer finest Italian food such as pizza, pasta and other for a very affordable price! Come with your family and enjoy the full Italian cuisine experience';
+    'We offer finest Italian food such as pizza, pasta, lasagna for a very affordable price! Come with your family and enjoy the full Italian cuisine experience';
   contentDiv.appendChild(para1);
+
+  const homePizza = document.createElement('img');
+  homePizza.classList.add('top-image');
+  homePizza.src = '../src/photos/pizza-home.jpg';
+  homePizza.alt = 'Image of a pizza';
+  contentDiv.appendChild(homePizza);
+
+  const homeSpaghetti = document.createElement('img');
+  homeSpaghetti.classList.add('top-image');
+  homeSpaghetti.src = '../src/photos/spaghetti-home.jpg';
+  homeSpaghetti.alt = 'Image of a pizza';
+  contentDiv.appendChild(homeSpaghetti);
 }
 
 
@@ -100,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 // import { Contact } from './contact.js';
 
 console.log('It is working!!');
-// HomePage();
+(0,_home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage)();
 
 })();
 
