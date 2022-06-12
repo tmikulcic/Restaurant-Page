@@ -185,16 +185,16 @@ __webpack_require__.r(__webpack_exports__);
 (0,_home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage)();
 
 const homeTab = document.querySelector('.home');
-homeTab = addEventListener('click', _home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage);
+homeTab.addEventListener('click', _home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage);
 
 const menuTab = document.querySelector('.menu');
-menuTab = addEventListener('click', _menu_page_js__WEBPACK_IMPORTED_MODULE_1__.MenuPage);
+menuTab.addEventListener('click', _menu_page_js__WEBPACK_IMPORTED_MODULE_1__.MenuPage);
 
 const aboutTab = document.querySelector('.about');
-aboutTab = addEventListener('click', _about_page_js__WEBPACK_IMPORTED_MODULE_2__.AboutPage);
+aboutTab.addEventListener('click', _about_page_js__WEBPACK_IMPORTED_MODULE_2__.AboutPage);
 
 const contactTab = document.querySelector('.contact');
-contactTab = addEventListener('click', _contact_page_js__WEBPACK_IMPORTED_MODULE_3__.ContactPage);
+contactTab.addEventListener('click', _contact_page_js__WEBPACK_IMPORTED_MODULE_3__.ContactPage);
 
 })();
 
