@@ -11,6 +11,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function HomePage() {
   const contentDiv = document.querySelector('#content');
+  contentDiv.replaceChildren();
+
   const heading = document.createElement('h1');
   heading.textContent = `Welcome to Papa Tony's, the finest Italian Restaurant in town!`;
   heading.classList.add('landing-title');
@@ -33,6 +35,78 @@ function HomePage() {
   homeSpaghetti.src = '../src/photos/spaghetti-home.jpg';
   homeSpaghetti.alt = 'Image of a pizza';
   contentDiv.appendChild(homeSpaghetti);
+}
+
+
+
+
+/***/ }),
+/* 2 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "MenuPage": () => (/* binding */ MenuPage)
+/* harmony export */ });
+function MenuPage() {
+  const contentDiv = document.querySelector('#content');
+  contentDiv.replaceChildren();
+
+  const homePizza = document.createElement('img');
+  homePizza.classList.add('top-image');
+  homePizza.src = '../src/photos/pizza-home.jpg';
+  homePizza.alt = 'Image of a pizza';
+  contentDiv.appendChild(homePizza);
+
+  const homeSpaghetti = document.createElement('img');
+  homeSpaghetti.classList.add('top-image');
+  homeSpaghetti.src = '../src/photos/spaghetti-home.jpg';
+  homeSpaghetti.alt = 'Image of a pizza';
+  contentDiv.appendChild(homeSpaghetti);
+}
+
+
+
+
+/***/ }),
+/* 3 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AboutPage": () => (/* binding */ AboutPage)
+/* harmony export */ });
+function AboutPage() {
+  const contentDiv = document.querySelector('#content');
+  contentDiv.replaceChildren();
+
+  const homePizza = document.createElement('img');
+  homePizza.classList.add('top-image');
+  homePizza.src = '../src/photos/pizza-home.jpg';
+  homePizza.alt = 'Image of a pizza';
+  contentDiv.appendChild(homePizza);
+}
+
+
+
+
+/***/ }),
+/* 4 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ContactPage": () => (/* binding */ ContactPage)
+/* harmony export */ });
+function ContactPage() {
+  const contentDiv = document.querySelector('#content');
+  contentDiv.replaceChildren();
+
+  const homePizza = document.createElement('img');
+  homePizza.classList.add('top-image');
+  homePizza.src = '../src/photos/pizza-home.jpg';
+  homePizza.alt = 'Image of a pizza';
+  contentDiv.appendChild(homePizza);
 }
 
 
@@ -100,13 +174,27 @@ var __webpack_exports__ = {};
 (() => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _home_page_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _menu_page_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _about_page_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _contact_page_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 
-// import { Menu } from './menu.js';
-// import { About } from './about.js';
-// import { Contact } from './contact.js';
 
-console.log('It is working!!');
+
+
+
 (0,_home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage)();
+
+const homeTab = document.querySelector('.home');
+homeTab = addEventListener('click', _home_page_js__WEBPACK_IMPORTED_MODULE_0__.HomePage);
+
+const menuTab = document.querySelector('.menu');
+menuTab = addEventListener('click', _menu_page_js__WEBPACK_IMPORTED_MODULE_1__.MenuPage);
+
+const aboutTab = document.querySelector('.about');
+aboutTab = addEventListener('click', _about_page_js__WEBPACK_IMPORTED_MODULE_2__.AboutPage);
+
+const contactTab = document.querySelector('.contact');
+contactTab = addEventListener('click', _contact_page_js__WEBPACK_IMPORTED_MODULE_3__.ContactPage);
 
 })();
 

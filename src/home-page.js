@@ -1,5 +1,7 @@
 function HomePage() {
   const contentDiv = document.querySelector('#content');
+  contentDiv.replaceChildren();
+
   const heading = document.createElement('h1');
   heading.textContent = `Welcome to Papa Tony's, the finest Italian Restaurant in town!`;
   heading.classList.add('landing-title');
