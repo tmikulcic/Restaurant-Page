@@ -14,15 +14,9 @@ function HomePage() {
   contentDiv.replaceChildren();
 
   const heading = document.createElement('h1');
-  heading.textContent = `Welcome to Papa Tony's, the finest Italian Restaurant in town!`;
+  heading.textContent = `Welcome to Papa Tony's, the finest Italian Restaurant in town since 1911!`;
   heading.classList.add('landing-title');
   contentDiv.appendChild(heading);
-
-  const para1 = document.createElement('p');
-  para1.classList.add('para1');
-  para1.textContent =
-    'We offer finest Italian food such as pizza, pasta, lasagna for a very affordable price! Come with your family and enjoy the full Italian cuisine experience';
-  contentDiv.appendChild(para1);
 
   const homePizza = document.createElement('img');
   homePizza.classList.add('top-image');
@@ -30,11 +24,10 @@ function HomePage() {
   homePizza.alt = 'Image of a pizza';
   contentDiv.appendChild(homePizza);
 
-  const homeSpaghetti = document.createElement('img');
-  homeSpaghetti.classList.add('top-image');
-  homeSpaghetti.src = '../src/photos/spaghetti-home.jpg';
-  homeSpaghetti.alt = 'Image of a pizza';
-  contentDiv.appendChild(homeSpaghetti);
+  const para1 = document.createElement('p');
+  para1.classList.add('para1');
+  para1.textContent = 'Order online or visit us!';
+  contentDiv.appendChild(para1);
 }
 
 
@@ -52,17 +45,25 @@ function MenuPage() {
   const contentDiv = document.querySelector('#content');
   contentDiv.replaceChildren();
 
-  const homePizza = document.createElement('img');
-  homePizza.classList.add('top-image');
-  homePizza.src = '../src/photos/pizza-home.jpg';
-  homePizza.alt = 'Image of a pizza';
-  contentDiv.appendChild(homePizza);
+  const pizzas = [
+    ' Margherita',
+    ' Napolitana',
+    ' Capricosa',
+    ' Fungi',
+    ' Vesuvio',
+    ' Quattro Formaggio',
+    ' Quattro Formaggio Speciale',
+    ' Salami',
+    ' Al Tonno',
+    ' Vege',
+  ];
 
-  const homeSpaghetti = document.createElement('img');
-  homeSpaghetti.classList.add('top-image');
-  homeSpaghetti.src = '../src/photos/spaghetti-home.jpg';
-  homeSpaghetti.alt = 'Image of a pizza';
-  contentDiv.appendChild(homeSpaghetti);
+  pizzas.forEach((pizza) => {
+    const para = document.createElement('p');
+    para.classList.add('menu-list');
+    para.textContent = `Pizza ${pizza}`;
+    contentDiv.appendChild(para);
+  });
 }
 
 
@@ -80,11 +81,17 @@ function AboutPage() {
   const contentDiv = document.querySelector('#content');
   contentDiv.replaceChildren();
 
-  const homePizza = document.createElement('img');
-  homePizza.classList.add('top-image');
-  homePizza.src = '../src/photos/pizza-home.jpg';
-  homePizza.alt = 'Image of a pizza';
-  contentDiv.appendChild(homePizza);
+  const para1 = document.createElement('p');
+  para1.classList.add('para1');
+  para1.textContent =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis magna sed erat luctus gravida. Sed nec commodo elit. Pellentesque volutpat vestibulum consequat. Maecenas malesuada tristique leo, a pellentesque tortor placerat a. Donec a elementum orci, non rhoncus nisi. Sed sit amet interdum orci, a pulvinar metus. Mauris dolor mi, cursus vel mauris ac, molestie congue felis. Mauris id sem lobortis tortor scelerisque volutpat. Duis fringilla, leo eget auctor tempor, velit ante malesuada nisl, nec imperdiet metus lectus id eros. Suspendisse convallis magna metus, eu condimentum sem elementum ac. Nulla tempus dapibus velit venenatis rutrum.';
+  contentDiv.appendChild(para1);
+
+  const para2 = document.createElement('p');
+  para2.classList.add('para1');
+  para2.textContent =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis magna sed erat luctus gravida. Sed nec commodo elit. Pellentesque volutpat vestibulum consequat.';
+  contentDiv.appendChild(para2);
 }
 
 
@@ -102,11 +109,20 @@ function ContactPage() {
   const contentDiv = document.querySelector('#content');
   contentDiv.replaceChildren();
 
-  const homePizza = document.createElement('img');
-  homePizza.classList.add('top-image');
-  homePizza.src = '../src/photos/pizza-home.jpg';
-  homePizza.alt = 'Image of a pizza';
-  contentDiv.appendChild(homePizza);
+  const para1 = document.createElement('p');
+  para1.classList.add('para1');
+  para1.textContent = 'Address: wellington street 82B';
+  contentDiv.appendChild(para1);
+
+  const para2 = document.createElement('p');
+  para2.classList.add('para1');
+  para2.textContent = 'Working hours: every day 7am - 11pm';
+  contentDiv.appendChild(para2);
+
+  const para3 = document.createElement('p');
+  para3.classList.add('para1');
+  para3.textContent = 'phone number: +3913 842 952';
+  contentDiv.appendChild(para3);
 }
 
 

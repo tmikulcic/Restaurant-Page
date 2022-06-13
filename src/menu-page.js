@@ -2,17 +2,25 @@ function MenuPage() {
   const contentDiv = document.querySelector('#content');
   contentDiv.replaceChildren();
 
-  const homePizza = document.createElement('img');
-  homePizza.classList.add('top-image');
-  homePizza.src = '../src/photos/pizza-home.jpg';
-  homePizza.alt = 'Image of a pizza';
-  contentDiv.appendChild(homePizza);
+  const pizzas = [
+    ' Margherita',
+    ' Napolitana',
+    ' Capricosa',
+    ' Fungi',
+    ' Vesuvio',
+    ' Quattro Formaggio',
+    ' Quattro Formaggio Speciale',
+    ' Salami',
+    ' Al Tonno',
+    ' Vege',
+  ];
 
-  const homeSpaghetti = document.createElement('img');
-  homeSpaghetti.classList.add('top-image');
-  homeSpaghetti.src = '../src/photos/spaghetti-home.jpg';
-  homeSpaghetti.alt = 'Image of a pizza';
-  contentDiv.appendChild(homeSpaghetti);
+  pizzas.forEach((pizza) => {
+    const para = document.createElement('p');
+    para.classList.add('menu-list');
+    para.textContent = `Pizza ${pizza}`;
+    contentDiv.appendChild(para);
+  });
 }
 
 export { MenuPage };
